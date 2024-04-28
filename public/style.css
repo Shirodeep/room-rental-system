@@ -1,0 +1,7 @@
+* {
+    overflow-x: hidden;
+}
+.navigation:hover{
+    background-color: whitesmoke !important;
+    color: gray !important;
+}

@@ -1,0 +1,60 @@
+CREATE TABLE users (
+    userid INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    firstname VARCHAR(30) NOT NULL,
+    lastname VARCHAR(30) NOT NULL,
+    middlename VARCHAR(30),
+    contact VARCHAR(20) NOT NULL,
+    gender VARCHAR(10) NOT NULL DEFAULT 'male',
+    email VARCHAR(50) NOT NULL,
+    password_hash VARCHAR(255) NOT NULL
+
+);
+
+
+
+
+
+create table rooms(roomid int(6) unsigned auto_increment primary key, 
+    rlocation varchar(50) not null, 
+    rlandmark varchar(50) not null, 
+    roomsize varchar(10) not null, 
+    nobedroom int(1) not null, 
+    rentpermonth int(5) not null, 
+    rprice int(1) not null, 
+    ramneties varchar(50) not null,
+    rstatus int(1) not null, 
+    rtype int(1) not null,
+    rdesc varchar(300) not null,
+
+    rimage varchar(300) not null, 
+    r_userid int(6) not null
+    
+);
+
+create table faq (
+name varchar(50) not null
+, email varchar(50) not null
+, subject varchar(50) not null
+,  message varchar(50) not null);
+
+
+ '$plocation', '$neighbour', '$roomsize', '$nobedroom', '$rentpermonth', '$price', '$ramneties'
+
+
+,'$rstatus', '$rtype', '$rdesc', '$image_path'
+
+rlocation,rlandmark,roomsize,nobedroom,rentpermonth,rprice,ramneties,rstatus,rtype,rdesc,rimage,r_userid
+
+roomid       | int(6) unsigned | NO   | PRI | NULL    | auto_increment |
+|     | varchar(50)     | NO   |     | NULL    |                |
+|     | varchar(50)     | NO   |     | NULL    |                |
+|      | varchar(10)     | NO   |     | NULL    |                |
+|     | int(1)          | NO   |     | NULL    |                |
+|  | int(5)          | NO   |     | NULL    |                |
+|        | int(1)          | NO   |     | NULL    |                |
+|     | varchar(50)     | NO   |     | NULL    |                |
+|       | int(1)          | NO   |     | NULL    |                |
+|         | int(1)          | NO   |     | NULL    |                |
+|         | varchar(300)    | NO   |     | NULL    |                |
+|        | varchar(300)    | NO   |     | NULL    |                |
+|   
