@@ -20,7 +20,7 @@ if ($uid) {
         
         $ramneties = "";
         foreach($_POST["amenties"] as $amnetie){
-            $ramneties .=" " .$amnetie;
+            $ramneties .=$amnetie.",";
         }
         $rstatus = $_POST["status"];
         $rtype = $_POST["type"];

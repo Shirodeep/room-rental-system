@@ -4,10 +4,10 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 // session_start();
 // phpinfo();
-$host = "127.0.0.1";
-$username= "carlous";
-$password = "lala123";
-$database = "dbname";
+$host = "sql302.epizy.com";
+$username= "epiz_30656595";
+$password = "vuuy9bS2HBLsa";
+$database = "epiz_30656595_dbname";
 
 try {
     $db = mysqli_connect($host, $username, $password, $database);

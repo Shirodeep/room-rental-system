@@ -3,10 +3,10 @@ $addReferenceLink = array(
     array("facebook", "primary", "#"),
     array("github", "light", "#"),
     array("twitter", "primary", "#"),
-    array("youtube", "danger", "#"),
+    array("youtube", "danger", "#")
 );
 ?>
-<div class="container-fluid bg-dark text-light">
+<div class="container-fluid text-light" style="background-color:black">
     <div class="row pt-3">
         <div class="col-8">Contact us</div>
         <?php

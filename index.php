@@ -4,18 +4,16 @@
 // ini_set('display_startup_errors', 1);
 // error_reporting(E_ALL);
 session_start();
-$title = "Thikxa";
+$title = "RRS";
 include_once("./includes/partials/header.php");
 include_once("./includes/partials/dbconnection.php");
 ?>
 
-<body>
-    <div class="container-fluid p-3" id="collections">
-        <div class="row ">    
-            <h1>Our Collections</h1>
-            <div class="d-flex flex-row-reverse" style="height: max-content;z-index: 999;">
-                <div class=""><a href="./itemdisplay.php"><button class="btn btn-warning">Show more</button></a></div>
-            </div>
+<body> 
+    <div class="container-fluid p-3" id="collections" style="gap:16px;">
+        <div class="d-flex flex-row" style="height: max-content;z-index: 999; justify-content:space-between;">    
+            <p style="font-size:24px; font-weight:500;">Our Collections</p>
+            <a href="./itemdisplay.php"><button class="btn btn-warning">Show more</button></a>
         </div>
         <div class=" d-flex flex-wrap" style="height: max-content;">
         <?php
@@ -33,17 +31,17 @@ include_once("./includes/partials/dbconnection.php");
                     $roomid = $row["roomid"];
                     if ($rowCount >= 1) {
                         ?>
-                    <a class="items m-2" href="./includes/itemsdescription.php?id=<?php  echo $roomid?>" style="color:black; text-decoration: none;border: 1px solid gray; border-radius: 15px;height:max-content;width:30vh">
+                    <a class="items m-2" href="./includes/itemsdescription.php?id=<?php  echo $roomid?>" style="color:black; text-decoration: none;border: 1px solid gray; border-radius: 12px;height:15.6rem;width:30vh">
                     <img src='<?php echo $srcrimage; ?>' height="150" width="200">
                     <div class="row p-1">
-                    <div class="col"> <?php echo $rlocation ?> </div>
+                    <div class="col" style="font-size: 16px; font-weight:600;"> <?php echo $rlocation ?> </div>
                     </div>
                     <div class="row p-1">
-                    <div class="col">रु <?php echo $rentpermonth ?></div>
+                    <div class="col" style="font-size: 18px; font-weight:bold;">रु <?php echo $rentpermonth ?></div>
                     </div>
                     <div class="row p-1">
                     <div class="col"><div class="row">
-                            <div class="col">
+                            <div class="col text-dark" style="font-size:10px;color:gray;">
                                 <?php 
                                     if ($rprice == 0)
                                         echo "Fixed";

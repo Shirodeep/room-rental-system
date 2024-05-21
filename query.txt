@@ -21,11 +21,12 @@ create table rooms(roomid int(6) unsigned auto_increment primary key,
     nobedroom int(1) not null, 
     rentpermonth int(5) not null, 
     rprice int(1) not null, 
+
     ramneties varchar(50) not null,
+
     rstatus int(1) not null, 
     rtype int(1) not null,
     rdesc varchar(300) not null,
-
     rimage varchar(300) not null, 
     r_userid int(6) not null
     

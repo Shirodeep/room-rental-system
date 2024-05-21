@@ -67,8 +67,8 @@ $nobedroom = $result["nobedroom"];
                 </div>
                 <div class="row-sm p-2 d-flex justify-content-between">
                     <div class="col-2"></div>
-                    <a class="col-3" href="./buy.php?"><button class=" btn btn-outline-warning" name="buy" type="button" style="width: 100%">Book</button></a>
-                    <a class="col-3"><button class=" btn btn-outline-success" type="submit" name="cart" value="c<?php echo mt_rand(323121, 927188) ?>" style="width: 100%">Comment</button></a>
+                    <a class="col-3" href="./buy.php?id=<?php echo $roomid?>&transid=<?php echo mt_rand(3888, 987777)?>"><button class=" btn btn-warning" name="Book" type="button" style="width: 100%">Book</button></a>
+                    <a class="col-3"><button class=" btn btn-outline-success" type="submit" name="cart" value="1<?php echo mt_rand(323121, 927188) ?>1" style="width: 100%">Comment</button></a>
                     <div class="col-2"></div>
                 </div>
             </form>
